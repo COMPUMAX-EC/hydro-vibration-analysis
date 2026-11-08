@@ -1,0 +1,8 @@
+# Datos de planta: privados, solo en local
+*.csv
+*.json
+*.png
+data/
+backups/
+__pycache__/
+.venv/
