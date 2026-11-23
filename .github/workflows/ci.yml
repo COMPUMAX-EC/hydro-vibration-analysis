@@ -18,3 +18,7 @@ jobs:
           if git ls-files | grep -Ei '\.(csv|json|png)$'; then
             echo "Hay datos de planta en el repo; deben quedarse en local." && exit 1
           fi
+      - name: Synthetic demo tests
+        run: |
+          pip install numpy pandas pytest
+          python -m pytest -q tests

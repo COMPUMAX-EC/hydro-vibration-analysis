@@ -9,3 +9,6 @@ Series de tiempo de RMS de vibración por zona (A–D) de una central hidroeléc
 Siguiente paso: detector de anomalías por zona con `darts.ad`, cruzado con la bitácora de mantenimiento.
 
 No confundir con el Lector Modbus (medidor eléctrico PM556x).
+
+## Synthetic demo (public-safe)
+`synthetic_demo/rms_alarms.py` generates seeded synthetic RMS per zone (mm/s), with one zone drifting upward, and flags alert (4.5) and alarm (7.1) crossings on a 10-minute rolling mean. `python synthetic_demo/rms_alarms.py` prints the first crossings; `pytest tests` runs in CI. No plant data is used.
