@@ -44,3 +44,7 @@ pytest tests
 ```
 
 Not to be confused with the Modbus reader ([lector-modbus](https://github.com/COMPUMAX-EC/lector-modbus), PM556x power meter).
+
+## Demo page (synthetic data)
+
+`python synthetic_demo/build_demo_page.py site/index.html` builds a self-contained HTML page (inline SVG, no external assets) with RMS per zone and the alert/alarm thresholds. The `Demo page` workflow builds it on every change and uploads it as the `synthetic-vibration-demo` artifact. No plant data is used.
